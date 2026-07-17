@@ -1,0 +1,12 @@
+[settings]
+dotfiles.root = "~/.dotfiles"
+
+[dotfiles]
+"~/.dotfiles" = "src/dotfiles"
+"~/.zshrc" = "src/dotfiles/modules/zsh/zshrc"
+"~/.config/ghostty/config" = "src/dotfiles/modules/ghostty/config"
+"~/.config/mise/conf.d/*.toml" = "src/dotfiles/modules/mise/conf.d/*.toml"
+
+[bootstrap.packages]
+"brew:gh" = "latest"
+"brew-cask:ghostty" = "latest"

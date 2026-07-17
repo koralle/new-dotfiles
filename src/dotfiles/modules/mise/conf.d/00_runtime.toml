@@ -1,0 +1,5 @@
+[tools]
+"rust" = { version = "nightly" }
+"node" = ["latest", "lts"]
+"deno" = "latest"
+"bun" = "latest"

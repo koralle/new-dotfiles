@@ -1,0 +1,4 @@
+[tools]
+# awesome tools installed by cargo
+"cargo:just" = "1.56.0"
+"cargo:zoxide" = "0.10.0"
