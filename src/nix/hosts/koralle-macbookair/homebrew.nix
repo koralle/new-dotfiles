@@ -9,7 +9,11 @@
       cleanup = "uninstall";
     };
 
-    brews = [ ];
+    brews = [
+      # GitHub CLI
+      # https://cli.github.com/
+      "gh"
+    ];
 
     casks = [
       {
@@ -33,6 +37,25 @@
         # Aerospace
         # https://github.com/nikitabobko/AeroSpace
         name = "nikitabobko/tap/aerospace";
+      }
+      {
+        # Firefox
+        # https://github.com/mozilla-firefox/firefox
+        name = "firefox";
+      }
+      {
+        # Raycast
+        # https://www.raycast.com/
+        name = "raycast";
+      }
+      {
+        # Zed
+        # https://github.com/zed-industries/zed
+        name = "zed";
+      }
+      {
+        # Tailscale
+        name = "tailscale-app";
       }
     ];
   };
