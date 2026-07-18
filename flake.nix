@@ -29,9 +29,31 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # flake-parts
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
+    # nix-homebrew
+    # https://github.com/zhaofengli/nix-homebrew
+    nix-homebrew = {
+      url = "github:zhaofengli/nix-homebrew";
+    };
+
+    # homebrew-core
+    # https://github.com/Homebrew/homebrew-core
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
+    };
+
+    # homebrew-cask
+    # https://github.com/Homebrew/homebrew-cask
+    homebrew-cask = {
+      url = "github:homebrew/homebrew-cask";
+      flake = false;
+    };
+
+    # nikitabobko/homebrew-tap (Aerospace)
+    # https://github.com/nikitabobko/homebrew-tap
+    homebrew-tap = {
+      url = "github:nikitabobko/homebrew-tap";
+      flake = false;
     };
   };
 
@@ -40,36 +62,63 @@
       self,
       nix-darwin,
       nixpkgs,
+      nix-homebrew,
+      homebrew-core,
+      homebrew-cask,
+      homebrew-tap,
       home-manager,
-      flake-parts,
       ...
     }:
     let
       username = "koralle";
       system = "aarch64-darwin";
     in
-    flake-parts.lib.mkFlake { inherit inputs; } {
-      imports = [
-        # Import home-manager's flake module
-        inputs.home-manager.flakeModules.home-manager
-      ];
-      flake = {
-        homeConfigurations.koralle = home-manager.lib.homeManagerConfiguration {
-          pkgs = import nixpkgs { inherit system; };
-
-	        extraSpecialArgs = {
-            inherit inputs;
-	        };
-
-          modules = [
-            {
-              home.username = "${username}";
-              home.homeDirectory = "/Users/${username}";
-              home.stateVersion = "26.11";
-            }
-            ./src/nix/modules/flake.nix
-          ];
+    {
+      darwinConfigurations."koralle-macbookair" = nix-darwin.lib.darwinSystem {
+        inherit system;
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ ];
         };
+
+        specialArgs = {
+          inherit username;
+        };
+
+        modules = [
+          ./src/nix/hosts/koralle-macbookair
+
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              enable = true;
+              user = username;
+              taps = {
+                "homebrew/homebrew-core" = homebrew-core;
+                "homebrew/homebrew-cask" = homebrew-cask;
+                "nikitabobko/homebrew-tap" = homebrew-tap;
+              };
+              mutableTaps = true;
+            };
+          }
+
+          (
+            { config, ... }:
+            {
+              homebrew.taps = builtins.attrNames config.nix-homebrew.taps;
+            }
+          )
+
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = {
+              inherit inputs username;
+            };
+            home-manager.users.${username} = import ./src/nix/modules/flake.nix;
+          }
+        ];
       };
     };
 }
