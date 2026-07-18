@@ -2,3 +2,11 @@
 # awesome tools installed by cargo
 "cargo:just" = "1.56.0"
 "cargo:zoxide" = "0.10.0"
+"cargo:fd-find" = "10.4.2"
+"cargo:ripgrep" = "15.2.0"
+"cargo:bat" = "0.26.1"
+"cargo:eza" = "0.23.4"
+"cargo:starship" = "1.26.0"
+
+# a plugin-manager for Zsh
+"cargo:sheldon" = "0.8.5"

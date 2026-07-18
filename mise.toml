@@ -5,8 +5,21 @@ dotfiles.root = "~/.dotfiles"
 "~/.dotfiles" = "src/dotfiles"
 "~/.zshrc" = "src/dotfiles/modules/zsh/zshrc"
 "~/.config/ghostty/config" = "src/dotfiles/modules/ghostty/config"
+"~/.config/herdr/config.toml" = "src/dotfiles/modules/herdr/config.toml"
+"~/.config/sheldon/plugins.toml" = "src/dotfiles/modules/sheldon/plugins.toml"
 "~/.config/mise/conf.d/*.toml" = "src/dotfiles/modules/mise/conf.d/*.toml"
+"~/.config/fish/config.fish" = "src/dotfiles/modules/fish/config.fish"
+"~/.config/fish/conf.d/*.fish" = "src/dotfiles/modules/fish/conf.d/*.fish"
+"~/.config/eza/theme.yaml" = "src/dotfiles/modules/eza/theme.yaml"
+"~/.config/opencode/opencode.jsonc" = "src/dotfiles/modules/opencode/opencode.jsonc"
+"~/.config/tig/config" = "src/dotfiles/modules/tig/config"
+
+[bootstrap.brew.taps]
 
 [bootstrap.packages]
-"brew:gh" = "latest"
+"brew:gh" = "2.96.0"
+"brew:fish" = "4.8.1"
 "brew-cask:ghostty" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:opencode-desktop" = "latest"
+"brew-cask:discord" = "latest"
