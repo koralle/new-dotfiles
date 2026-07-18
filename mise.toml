@@ -13,13 +13,3 @@ dotfiles.root = "~/.dotfiles"
 "~/.config/eza/theme.yaml" = "src/dotfiles/modules/eza/theme.yaml"
 "~/.config/opencode/opencode.jsonc" = "src/dotfiles/modules/opencode/opencode.jsonc"
 "~/.config/tig/config" = "src/dotfiles/modules/tig/config"
-
-[bootstrap.brew.taps]
-
-[bootstrap.packages]
-"brew:gh" = "2.96.0"
-"brew:fish" = "4.8.1"
-"brew-cask:ghostty" = "latest"
-"brew-cask:google-chrome" = "latest"
-"brew-cask:opencode-desktop" = "latest"
-"brew-cask:discord" = "latest"
