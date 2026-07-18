@@ -1,0 +1,22 @@
+onboarding = false
+
+[terminal]
+default_shell = "fish"
+
+[theme]
+name = "nord"
+auto_switch = true
+
+[ui]
+sidebar_min_width = 36
+sidebar_max_width = 48
+
+[ui.sound]
+enabled = true
+
+[worktrees]
+directory = "~/.herdr/worktrees"
+
+[keys]
+prefix = "ctrl+b"
+close_worktree = "prefix+shift+d"

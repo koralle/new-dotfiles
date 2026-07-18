@@ -1,2 +1,15 @@
+# Load plugins managed by sheldon
+eval "$(sheldon source)"
+
+# Initialize zsh
+source <(fzf --zsh)
+
+# Initialize mise
 eval "$(~/.local/bin/mise activate zsh)"
+
+# Initialize zoxide
 eval "$(zoxide init zsh)"
+
+# Initialize starship
+eval "$(starship init zsh)"
+

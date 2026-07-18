@@ -28,6 +28,11 @@
       url = "github:nix-community/neovim-nightly-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # flake-parts
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+    };
   };
 
   outputs =
@@ -36,33 +41,35 @@
       nix-darwin,
       nixpkgs,
       home-manager,
+      flake-parts,
       ...
     }:
     let
       username = "koralle";
+      system = "aarch64-darwin";
     in
-    {
-      darwinConfigurations."koralle" = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [
+        # Import home-manager's flake module
+        inputs.home-manager.flakeModules.home-manager
+      ];
+      flake = {
+        homeConfigurations.koralle = home-manager.lib.homeManagerConfiguration {
+          pkgs = import nixpkgs { inherit system; };
 
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ ];
+	        extraSpecialArgs = {
+            inherit inputs;
+	        };
+
+          modules = [
+            {
+              home.username = "${username}";
+              home.homeDirectory = "/Users/${username}";
+              home.stateVersion = "26.11";
+            }
+            ./src/nix/modules/flake.nix
+          ];
         };
-
-        specialArgs = {
-          inherit username;
-        };
-
-        modules = [
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit inputs username; };
-            home-manager.users."${username}" = import ./src/nix/modules/flake.nix;
-          }
-        ];
       };
     };
 }
