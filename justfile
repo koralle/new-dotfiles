@@ -2,4 +2,4 @@ alias b := build
 
 build:
   @mise bootstrap
-  @nix run home-manager -- switch --flake .#koralle
+  @sudo darwin-rebuild switch --flake .#koralle-macbookair

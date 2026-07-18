@@ -1,4 +1,9 @@
-{ inputs, pkgs, ... }:
+{
+  inputs,
+  pkgs,
+  username,
+  ...
+}:
 {
   imports = [
     ./neovim/flake.nix
@@ -11,9 +16,19 @@
   };
 
   home = {
+    username = username;
+    homeDirectory = "/Users/${username}";
+    stateVersion = "26.11";
+
     packages = with pkgs; [
       # https://github.com/jonas/tig
       tig
+
+      # https://cli.github.com/
+      gh
+
+      # https://fishshell.com/
+      fish
     ];
   };
 }
