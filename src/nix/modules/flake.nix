@@ -24,9 +24,6 @@
       # https://github.com/jonas/tig
       tig
 
-      # https://cli.github.com/
-      gh
-
       # https://fishshell.com/
       fish
     ];
