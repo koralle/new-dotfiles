@@ -1,3 +1,5 @@
+fish_add_path $HOME/.local/bin
+
 set -g XDG_CONFIG_HOME $HOME/.config
 
 # vi mode
