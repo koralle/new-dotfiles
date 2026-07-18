@@ -1,7 +1,13 @@
 { username, ... }:
 {
   imports = [
+    ./environment.nix
+    ./fonts.nix
     ./homebrew.nix
+    ./networking.nix
+    ./security.nix
+    ./services.nix
+    ./system.nix
   ];
 
   nix = {
@@ -15,9 +21,4 @@
   nixpkgs.hostPlatform = "aarch64-darwin";
 
   users.users.${username}.home = "/Users/${username}";
-
-  system = {
-    stateVersion = 6;
-    primaryUser = username;
-  };
 }
