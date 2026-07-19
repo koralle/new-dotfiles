@@ -1,2 +1,3 @@
 [core]
-  pager = hunk pager
+  pager  = hunk pager
+  editor = nvim

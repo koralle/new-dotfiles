@@ -13,6 +13,15 @@
       # GitHub CLI
       # https://cli.github.com/
       "gh"
+
+      # betterleaks
+      # https://github.com/betterleaks/betterleaks
+      "betterleaks"
+
+      "direnv"
+
+      "libsql/sqld/sqld"
+      "tursodatabase/tap/turso"
     ];
 
     casks = [
@@ -56,6 +65,15 @@
       {
         # Tailscale
         name = "tailscale-app";
+      }
+      {
+        # Podman Desktop
+        name = "podman-desktop";
+      }
+      {
+        # Docker Sandboxes (sbx)
+        # https://docs.docker.com/ai/sandboxes/
+        name = "docker/tap/sbx";
       }
     ];
   };

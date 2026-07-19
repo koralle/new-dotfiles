@@ -99,6 +99,14 @@
                 "nikitabobko/homebrew-tap" = homebrew-tap;
               };
               mutableTaps = true;
+
+              trust = {
+                taps = [
+                  "docker/tap"
+                  "caezium/tap"
+                  "tursodatabase/tap"
+                ];
+              };
             };
           }
 
