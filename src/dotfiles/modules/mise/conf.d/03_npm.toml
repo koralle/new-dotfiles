@@ -21,3 +21,6 @@ npm.package_manager = 'bun'
 
 'npm:opencode-ai' = '1.18.3'
 
+# hunk
+# https://www.hunk.dev/
+'npm:hunkdiff' = '0.17.1'
