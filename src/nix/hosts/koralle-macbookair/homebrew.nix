@@ -13,6 +13,15 @@
       # GitHub CLI
       # https://cli.github.com/
       "gh"
+
+      # betterleaks
+      # https://github.com/betterleaks/betterleaks
+      "betterleaks"
+
+      "direnv"
+
+      "libsql/sqld/sqld"
+      "tursodatabase/tap/turso"
     ];
 
     casks = [
@@ -56,6 +65,10 @@
       {
         # Tailscale
         name = "tailscale-app";
+      }
+      {
+        # Brave
+        name = "brave-browser";
       }
     ];
   };

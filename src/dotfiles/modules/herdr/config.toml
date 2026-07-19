@@ -15,8 +15,9 @@ sidebar_max_width = 48
 enabled = true
 
 [worktrees]
-directory = "~/.herdr/worktrees"
+directory = "~/.worktrees"
 
 [keys]
 prefix = "ctrl+b"
-close_worktree = "prefix+shift+d"
+split_horizontal = "prefix+minus"
+split_vertical = "prefix+|"

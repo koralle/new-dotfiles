@@ -3,4 +3,4 @@
 "node" = ["latest", "lts"]
 "deno" = "latest"
 "bun" = "latest"
-
+"python" = "3.14.6"
