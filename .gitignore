@@ -1,1 +1,3 @@
 .worktrees/
+.envrc
+.DS_Store

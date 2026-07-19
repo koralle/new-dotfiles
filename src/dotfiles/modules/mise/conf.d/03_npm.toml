@@ -3,15 +3,11 @@ npm.package_manager = 'bun'
 
 [tools]
 'npm:npm' = '12.0.1'
-'pnpm' = '11.14.0'
+'pnpm' = '11.25.0'
 
 # ni
 # https://github.com/antfu-collective/ni
 'npm:@antfu/ni' = '30.2.0'
-
-# difit
-# https://github.com/yoshiko-pg/difit
-'npm:difit' = '5.0.8'
 
 # fish-lsp
 'npm:fish-lsp' = '1.1.4'
@@ -19,8 +15,25 @@ npm.package_manager = 'bun'
 # yaml-language-server
 'npm:yaml-language-server' = '1.24.0'
 
-'npm:opencode-ai' = '1.18.3'
-
 # hunk
 # https://www.hunk.dev/
-'npm:hunkdiff' = '0.17.1'
+'npm:hunkdiff' = '0.17.7'
+
+# Astro LSP
+'npm:@astrojs/language-server' = '2.16.12'
+
+'npm:@vtsls/language-server' = '0.3.0'
+
+'npm:@llamaindex/liteparse' = '2.11.0'
+
+'npm:@earendil-works/pi-coding-agent' = '0.84.1'
+
+'npm:@anthropic-ai/sandbox-runtime' = '0.0.71'
+
+'npm:opencode-ai' = '1.18.27'
+
+# 'npm:@opencode-ai/cli' = { version = 'next', bun_args = '--trust' }
+
+'npm:@rama_nigg/open-cursor' = '2.5.7'
+
+'npm:@pranshuparmar/witr' = '0.3.3'

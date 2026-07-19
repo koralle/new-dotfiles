@@ -5,6 +5,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   branch = "stable",
   lazy = false,
+  enabled = true,
   opts = {
     integrations = {
       icon = "nvim_web_devicons",

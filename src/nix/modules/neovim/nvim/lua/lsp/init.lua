@@ -53,11 +53,10 @@ local servers = {
   -- Oxfmt
   "oxfmt",
 
+  "vtsls"
+
   -- Oxlint
   -- "oxlint",
-
-  -- tsgo
-  "tsgo",
 }
 
 vim.lsp.enable(servers)
