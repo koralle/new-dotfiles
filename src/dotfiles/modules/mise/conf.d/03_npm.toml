@@ -28,7 +28,7 @@ npm.package_manager = 'bun'
 # Astro LSP
 'npm:@astrojs/language-server' = '2.16.12'
 
-'npm:@qwen-code/qwen-code' = '0.20.0'
+'npm:@qwen-code/qwen-code' = '0.21.12'
 
 'npm:@vtsls/language-server' = '0.3.0'
 
