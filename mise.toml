@@ -20,3 +20,8 @@ experimental = true
 "~/.config/git/config" = "src/dotfiles/modules/git/config"
 "~/.config/hunk/config.toml" = "src/dotfiles/modules/hunk/config.toml"
 "~/.cursor/skills/**/*.md" = "src/dotfiles/modules/cursor/skills/**/*.md"
+"~/.pi/agent/settings.json" = "src/dotfiles/modules/pi/settings.json"
+
+# Pi Coding Agentの拡張機能で使用する設定
+# URL: https://pi.dev/packages/pi-mcp-adapter
+"~/.config/mcp/mcp.json" = "src/dotfiles/modules/mcp/mcp.json"

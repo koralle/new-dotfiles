@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@1.9.0"]
+    },
+    "cloudflare": {
+      "url": "https://mcp.cloudflare.com/mcp",
+      "protocolVersion": "auto"
+    },
+    "varlock": {
+      "url": "https://docs.mcp.varlock.dev/mcp",
+      "protocolVersion": "auto"
+    },
+    "mintlify": {
+      "url": "https://index.mintlify.com",
+      "protocolVersion": "auto"
+    }
+  }
+}
