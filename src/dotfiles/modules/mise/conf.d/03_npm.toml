@@ -30,7 +30,7 @@ npm.package_manager = 'bun'
 
 'npm:@anthropic-ai/sandbox-runtime' = '0.0.71'
 
-'npm:opencode-ai' = '1.18.27'
+'npm:opencode-ai' = '1.18.30'
 
 # 'npm:@opencode-ai/cli' = { version = 'next', bun_args = '--trust' }
 
