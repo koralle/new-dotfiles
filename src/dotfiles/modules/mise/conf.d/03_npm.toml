@@ -3,7 +3,7 @@ npm.package_manager = 'bun'
 
 [tools]
 'npm:npm' = '12.0.1'
-'pnpm' = '11.25.0'
+'pnpm' = '12.5.1'
 
 # ni
 # https://github.com/antfu-collective/ni
@@ -24,16 +24,7 @@ npm.package_manager = 'bun'
 
 'npm:@vtsls/language-server' = '0.3.0'
 
-'npm:@llamaindex/liteparse' = '2.11.0'
-
-'npm:@earendil-works/pi-coding-agent' = '0.84.1'
-
-'npm:@anthropic-ai/sandbox-runtime' = '0.0.71'
-
-'npm:opencode-ai' = '1.18.27'
-
-# 'npm:@opencode-ai/cli' = { version = 'next', bun_args = '--trust' }
-
-'npm:@rama_nigg/open-cursor' = '2.5.7'
+'npm:@earendil-works/pi-coding-agent' = { version = '0.86.1', bun_args = '--trust' } 
 
 'npm:@pranshuparmar/witr' = '0.3.3'
+

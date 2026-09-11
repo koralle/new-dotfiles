@@ -18,12 +18,10 @@
       # https://github.com/betterleaks/betterleaks
       "betterleaks"
 
-      "direnv"
       "age"
 
-      "libsql/sqld/sqld"
-      "tursodatabase/tap/turso"
-      "k1LoW/tap/mo"
+      # "libsql/sqld/sqld"
+      # "tursodatabase/tap/turso"
       "rtk-ai/tap/rtk"
     ];
 
