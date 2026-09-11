@@ -17,7 +17,7 @@ npm.package_manager = 'bun'
 
 # hunk
 # https://www.hunk.dev/
-'npm:hunkdiff' = '0.17.7'
+'npm:hunkdiff' = '0.22.0'
 
 # Astro LSP
 'npm:@astrojs/language-server' = '2.16.12'
