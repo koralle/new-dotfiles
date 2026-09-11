@@ -1,3 +1,6 @@
 [core]
   pager  = hunk pager
   editor = nvim
+[user]
+	email = koralle+github@koralle-mgmg.com
+	name = koralle
