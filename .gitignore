@@ -1,3 +1,7 @@
 .worktrees/
 .envrc
 .DS_Store
+
+# mise
+src/dotfiles/modules/mise/env.toml
+

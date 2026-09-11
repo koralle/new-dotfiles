@@ -10,3 +10,6 @@ eval "$(zoxide init zsh)"
 # Initialize starship
 eval "$(starship init zsh)"
 
+
+# Added by Devin
+export PATH="/Users/koralle/.codeium/windsurf/bin:$PATH"

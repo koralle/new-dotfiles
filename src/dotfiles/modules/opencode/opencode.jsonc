@@ -6,10 +6,13 @@
       "type": "remote",
       "url": "https://docs.mcp.cloudflare.com/mcp",
       "enabled": true
+    },
+    "varlock": {
+      "type": "remote",
+      "url": "https://docs.mcp.varlock.dev/mcp",
+      "enabled": true
     }
   },
   "plugin": [],
-  // OpenCodeにビルトインされている全てのLSPサーバーを有効化
-  // https://opencode.ai/docs/ja/lsp
   "lsp": true
 }

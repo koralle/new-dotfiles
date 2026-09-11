@@ -12,7 +12,6 @@ return {
       "ddu-source-buffer",
       "ddu-source-file_rec",
       "ddu-source-file_external",
-      "ddu-source-rg",
       "ddu-source-help",
       "ddu-source-lsp",
 

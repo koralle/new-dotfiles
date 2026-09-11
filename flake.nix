@@ -105,6 +105,10 @@
                   "docker/tap"
                   "caezium/tap"
                   "tursodatabase/tap"
+                  "libsql/sqld"
+                  "rtk-ai/tap"
+                  "k1low/tap"
+                  "xcodesorg/made"
                 ];
               };
             };
