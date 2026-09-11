@@ -20,7 +20,7 @@ npm.package_manager = 'bun'
 'npm:hunkdiff' = '0.17.7'
 
 # Astro LSP
-'npm:@astrojs/language-server' = '2.16.12'
+'npm:@astrojs/language-server' = '2.16.16'
 
 'npm:@vtsls/language-server' = '0.3.0'
 
