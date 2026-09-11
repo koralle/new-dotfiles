@@ -7,7 +7,7 @@ npm.package_manager = 'bun'
 
 # ni
 # https://github.com/antfu-collective/ni
-'npm:@antfu/ni' = '30.2.0'
+'npm:@antfu/ni' = '30.5.0'
 
 # fish-lsp
 'npm:fish-lsp' = '1.1.4'
