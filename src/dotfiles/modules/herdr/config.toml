@@ -21,3 +21,6 @@ directory = "~/.worktrees"
 prefix = "ctrl+b"
 split_horizontal = "prefix+minus"
 split_vertical = "prefix+|"
+
+toggle_sidebar = "prefix+b"
+

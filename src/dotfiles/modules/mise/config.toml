@@ -1,6 +1,12 @@
 [settings]
 experimental = true
 
+# gh stores its token in the macOS keyring, so mise cannot read it from
+# gh's hosts.yml. Ask gh for the token instead of hitting the anonymous
+# GitHub API rate limit (60 req/h).
+[settings.github]
+credential_command = 'gh auth token --hostname "$MISE_CREDENTIAL_HOST"'
+
 [tools]
 age = 'latest'
 
