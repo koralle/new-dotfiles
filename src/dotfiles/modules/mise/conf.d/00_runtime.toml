@@ -4,4 +4,4 @@
 "deno" = "latest"
 "bun" = "latest"
 "python" = "3.14.6"
-
+"java" = "temurin-25"

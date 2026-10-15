@@ -23,6 +23,8 @@
       # "libsql/sqld/sqld"
       # "tursodatabase/tap/turso"
       "rtk-ai/tap/rtk"
+
+      "apm"
     ];
 
     casks = [
@@ -70,6 +72,11 @@
       {
         # Brave
         name = "brave-browser";
+      }
+      {
+        # Docker Sandboxes (sbx)
+        # https://github.com/docker/sbx-releases
+        name = "docker/tap/sbx";
       }
     ];
   };
