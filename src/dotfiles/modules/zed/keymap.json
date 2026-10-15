@@ -1,0 +1,14 @@
+[
+  {
+    "bindings": {
+      "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "bindings": {
+      "cmd-j": "menu::SelectNext",
+      "cmd-k": "menu::SelectPrevious"
+    }
+  }
+]

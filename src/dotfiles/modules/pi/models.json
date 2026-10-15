@@ -1,0 +1,27 @@
+{
+  "$schema": "https://pi.dev/schemas/models.schema.json",
+  "providers": {
+    "ollama-cloud": {
+      "name": "Ollama Cloud",
+      "baseUrl": "https://ollama.com/v1",
+      "api": "openai-completions",
+      "apiKey": "$OLLAMA_API_KEY",
+      "models": [
+        {
+          "id": "deepseek-v4.1-flash",
+          "name": "DeepSeek v4.1 Flash",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 1000000,
+          "cost": { "input": 0.15, "output": 0.60, "cacheRead": 0.003, "cacheWrite": 0 },
+          "compat": {
+            "supportsDeveloperRole": false,
+            "maxTokensField": "max_tokens",
+            "supportsReasoningEffort": true,
+            "thinkingFormat": "openai"
+          }
+        }
+      ]
+    }
+  }
+}

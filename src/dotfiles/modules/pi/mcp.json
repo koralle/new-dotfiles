@@ -2,7 +2,10 @@
   "mcpServers": {
     "chrome-devtools": {
       "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@1.9.0"]
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@1.9.0"
+      ]
     },
     "cloudflare": {
       "url": "https://mcp.cloudflare.com/mcp",
@@ -14,7 +17,7 @@
     },
     "context7": {
       "url": "https://mcp.context7.com/mcp",
-      "protocolVersion": "auto"
+      "exposure": "direct"
     }
   }
 }

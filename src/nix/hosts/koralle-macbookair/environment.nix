@@ -7,6 +7,10 @@
       wget
       jq
       gnupg
+
+      # Graphviz
+      # https://gitlab.com/graphviz/graphviz
+      graphviz
     ];
 
     variables = {
