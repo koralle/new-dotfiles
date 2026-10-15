@@ -16,9 +16,6 @@ experimental = true
 "~/.config/mise/config.toml" = "src/dotfiles/modules/mise/config.toml"
 "~/.config/mise/conf.d/*.toml" = "src/dotfiles/modules/mise/conf.d/*.toml"
 
-# mise (一時的な処置)
-"~/.config/mise/env.toml" = "src/dotfiles/modules/mise/env.toml"
-
 # Fish Shell
 "~/.config/fish/config.fish" = "src/dotfiles/modules/fish/config.fish"
 "~/.config/fish/conf.d/*.fish" = "src/dotfiles/modules/fish/conf.d/*.fish"
@@ -44,4 +41,9 @@ experimental = true
 
 # Pi Coding Agent
 "~/.pi/agent/*.json" = "src/dotfiles/modules/pi/*.json"
+"~/.pi/agent/AGENTS.md" = "src/dotfiles/modules/pi/AGENTS.md"
+
+# ~/.agents
+"~/.agents/skills/find-docs" = "src/dotfiles/modules/agents/find-docs"
+
 
