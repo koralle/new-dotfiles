@@ -174,9 +174,9 @@ specifiers = ["1.2.0"]
 bun_args = "--trust"
 
 [[tools."npm:@pranshuparmar/witr"]]
-version = "0.3.3"
+version = "0.3.4"
 backend = "npm:@pranshuparmar/witr"
-specifiers = ["0.3.3"]
+specifiers = ["0.3.4"]
 
 [[tools."npm:@vtsls/language-server"]]
 version = "0.3.0"
