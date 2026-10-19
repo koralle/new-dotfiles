@@ -33,9 +33,9 @@ backend = "cargo:eza"
 specifiers = ["0.23.4"]
 
 [[tools."cargo:fd-find"]]
-version = "10.4.2"
+version = "10.5.0"
 backend = "cargo:fd-find"
-specifiers = ["10.4.2"]
+specifiers = ["10.5.0"]
 
 [[tools."cargo:https://github.com/rtk-ai/rtk"]]
 version = "tag:v0.45.0"
