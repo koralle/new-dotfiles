@@ -199,9 +199,9 @@ backend = "npm:hunkdiff"
 specifiers = ["0.17.7"]
 
 [[tools."npm:npm"]]
-version = "12.0.1"
+version = "12.2.0"
 backend = "npm:npm"
-specifiers = ["12.0.1"]
+specifiers = ["12.2.0"]
 
 [[tools."npm:opencode-ai"]]
 version = "1.19.0"
