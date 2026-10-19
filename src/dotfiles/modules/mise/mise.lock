@@ -28,9 +28,9 @@ backend = "cargo:bat"
 specifiers = ["0.26.1"]
 
 [[tools."cargo:eza"]]
-version = "0.23.4"
+version = "0.23.5"
 backend = "cargo:eza"
-specifiers = ["0.23.4"]
+specifiers = ["0.23.5"]
 
 [[tools."cargo:fd-find"]]
 version = "10.4.2"
