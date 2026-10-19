@@ -26,7 +26,7 @@ npm.package_manager = 'bun'
 
 'npm:@earendil-works/pi-coding-agent' = { version = '1.2.0', bun_args = '--trust' } 
 
-'npm:@pranshuparmar/witr' = '0.3.3'
+'npm:@pranshuparmar/witr' = '0.3.4'
 
 'npm:opencode-ai' = '1.19.0'
 
