@@ -184,9 +184,9 @@ backend = "npm:@vtsls/language-server"
 specifiers = ["0.3.0"]
 
 [[tools."npm:ctx7"]]
-version = "0.6.1"
+version = "0.8.2"
 backend = "npm:ctx7"
-specifiers = ["0.6.1"]
+specifiers = ["0.8.2"]
 
 [[tools."npm:fish-lsp"]]
 version = "1.1.5"
