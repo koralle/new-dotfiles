@@ -28,5 +28,5 @@ npm.package_manager = 'bun'
 
 'npm:opencode-ai' = '1.19.3'
 
-'npm:ctx7' = '0.6.1'
+'npm:ctx7' = '0.8.2'
 
