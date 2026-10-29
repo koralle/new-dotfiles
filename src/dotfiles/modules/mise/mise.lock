@@ -147,15 +147,6 @@ checksum = "sha256:36dc14d797aaff6d89aab302cd053fdba6207dfdcf772052fa7b023a94b0e
 url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.5_8.tar.gz"
 
 [[tools.node]]
-version = "24.21.0"
-backend = "core:node"
-specifiers = ["lts"]
-
-[tools.node."platforms.macos-arm64"]
-checksum = "sha256:bed7eea5325e1108f32ce5228ddd6a5f0f08a499ee42aa7442aea583702f6057"
-url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-darwin-arm64.tar.gz"
-
-[[tools.node]]
 version = "26.9.0"
 backend = "core:node"
 specifiers = ["latest"]
@@ -163,6 +154,15 @@ specifiers = ["latest"]
 [tools.node."platforms.macos-arm64"]
 checksum = "sha256:6f3de7ed853ee283b4bf24b6e426618f1d357401ce5815db1866eb85eb4b05d9"
 url = "https://nodejs.org/dist/v26.9.0/node-v26.9.0-darwin-arm64.tar.gz"
+
+[[tools.node]]
+version = "24.22.2"
+backend = "core:node"
+specifiers = ["lts"]
+
+[tools.node."platforms.macos-arm64"]
+checksum = "sha256:aa9549349e47dffaa42dcf95d6e06ade8c4bdafc980979883b88767670df385a"
+url = "https://nodejs.org/dist/v24.22.2/node-v24.22.2-darwin-arm64.tar.gz"
 
 [[tools."npm:@antfu/ni"]]
 version = "30.6.0"
