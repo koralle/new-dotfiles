@@ -63,7 +63,7 @@ backend = "cargo:zoxide"
 specifiers = ["0.10.0"]
 
 [[tools.deno]]
-version = "2.9.7"
+version = "2.9.8"
 backend = "core:deno"
 specifiers = ["latest"]
 
